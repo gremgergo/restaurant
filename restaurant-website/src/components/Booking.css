@@ -1,0 +1,31 @@
+.booking {
+    max-width: 1200px; 
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0 auto;
+
+    margin-top: 50px;
+}
+
+.booking-title {
+    margin-top: 50px;
+    
+    text-align: center;
+}
+
+.booking-date {
+    display: flex;
+    flex-direction: column;
+}
+
+.date,
+.time,
+.booking-number,
+.name,
+.email,
+.tel {
+    background-color: aquamarine;
+}
