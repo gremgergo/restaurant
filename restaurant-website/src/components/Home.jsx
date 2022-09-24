@@ -15,17 +15,17 @@ function Home() {
             <div className='home'>
                 <div className='home-top'>
                     <div className='home-top-left'>
-                        <img src={ poachedEgg } alt='poachedEgg' />
+                        <img className='poached-egg' src={ poachedEgg } alt='poachedEgg' />
                         <p className='home-opening'>Monday - Saturday: 13:00 - 00:00 and Sunday 13:00 - 18:00</p>
                     </div>
                     <div className='home-top-right'>
-                        <p>Maison doree hospitality is tailor made just for you. Whether you're planning a corporate event, press conference, coffee break, lunch break or a private event, Maison dorée is the perfect choice.</p>
-                        <img src={ wineAndCheese } alt='wineAndCheese' />
+                        <p className='home-top-rigth-article'>Maison dorée hospitality is tailor made just for you. Whether you're planning a corporate event, press conference, coffee break, lunch break or a private event, Maison dorée is the perfect choice.</p>
+                        <img className='wine-and-cheese' src={ wineAndCheese } alt='wineAndCheese' />
                     </div>
                 </div>
                 <div className='home-bottom'>
                     <div className='home-bottom-left'>
-                        <img src={ terrace } alt='terrace' />
+                        <img className='terrace' src={ terrace } alt='terrace' />
                     </div>
                     <div className='home-bottom-right'>
                         <h1 className='home-bottom-right-title'>restaurant</h1>

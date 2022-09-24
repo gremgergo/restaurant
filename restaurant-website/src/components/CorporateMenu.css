@@ -1,5 +1,73 @@
 .corporate-menu {
     max-width: 1200px;   
 
+    display: flex;
+    flex-direction: row;
+    
+    gap: 100px;
+
     margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.corporate-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.corporate-title {
+    font-size: 36px;
+    font-weight: 400;
+
+    text-transform: capitalize;
+}
+
+.corporate-article {
+    font-size: 18px;
+    color: #bebebe;
+
+    line-height: 25px;
+}
+
+.corporate-button {
+    width: 200px;
+    height: 40px;
+
+    font-size: 18px;
+    text-transform: capitalize;
+
+    border: 2px solid #000;
+}
+
+.corporate-button:hover {
+    color: #fff;
+
+    background-color: #828282;
+    border: 2px solid #828282;
+}
+
+h6 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.corporate-contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.corporate-contact-left p,
+.corporate-contact-right p {
+    margin-top: 5px;
+    margin-left: 12px;
+
+    font-size: 16px;
+    color: #bebebe;
+}
+
+.salmon {
+    width: 600px;
+    height: 350px;  
 }
