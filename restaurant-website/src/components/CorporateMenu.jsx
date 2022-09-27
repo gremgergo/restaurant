@@ -5,7 +5,7 @@ import './CorporateMenu.css'
 
 function CorporateMenu() {
   return (
-    <div className='corporate-menu'>
+    <div id='corporate-menu'>
         <div className='corporate-left'>
             <h1 className='corporate-title'>corporate events</h1>
             <p className='corporate-article'>Masion dorée hospality comes to you. Whether it is a corporate event, press conference, coffee break, lunch break or your personal private event, choose Maison dorée and enjoy the experience.</p>

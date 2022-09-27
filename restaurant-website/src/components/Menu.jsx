@@ -7,7 +7,7 @@ import './Menu.css';
 
 function Menu() {
   return (
-    <div className='menu'>
+    <div id='menu'>
         <div className='menu-top'>
             <h1 className='menu-title'>menu</h1>
             <p className='menu-article'>Masion dorée philosophy is based on friends sharing dishes: sampling, tasting, enjoying. The menu changes with season and the kitchen is continually evolving. The menu features: salads, cold dishes, raw, wooden oven, charcoal, casserole, fitters, and dessert.</p>

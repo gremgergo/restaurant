@@ -10,22 +10,108 @@
     margin-top: 50px;
 }
 
-.booking-title {
-    margin-top: 50px;
-    
-    text-align: center;
+.booking input {
+    padding: 10px;
+
+    border: 2px solid #828282;
+
+    font-size: 14px;
+
+    color: #bebebe;
 }
 
-.booking-date {
-    display: flex;
-    flex-direction: column;
+.booking input::placeholder {
+    color: #bebebe;
+}
+
+.booking input:focus {
+    color: #bebebe;
+}
+
+.booking label {
+    text-transform: capitalize;
+
+    margin-bottom: 5px;
 }
 
 .date,
 .time,
-.booking-number,
-.name,
+.number {
+    width: 150px;
+    height: 40px;
+
+    margin-bottom: 25px;
+}
+
+.name {
+    width: 237.5px;
+    height: 40px;
+
+    margin-bottom: 25px;
+}
+
 .email,
 .tel {
-    background-color: aquamarine;
+    width: 237.5px;
+    height: 40px;
+
+    margin-bottom: 50px;
+}
+
+.booking-title {
+    margin-top: 100px;
+    
+    text-align: center;
+}
+
+.booking-date-time-number {
+    display: flex;
+    flex-direction: row;
+
+    gap: 25px;
+}
+
+.booking-date,
+.booking-time,
+.booking-number,
+.booking-first-name,
+.booking-last-name,
+.booking-email,
+.booking-tel {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-name,
+.booking-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.booking-contact {
+    display: flex;
+    flex-direction: row;
+}
+
+.booking button {
+    width: 100px;
+    height: 40px;
+
+    margin-bottom: 100px;
+
+    background-color: #9dada1;
+
+    font-size: 14px;
+    color: #fff;
+}
+
+.booking button:hover {
+    background-color: #828282;
 }

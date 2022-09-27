@@ -5,7 +5,7 @@ import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg
 
 function Footer() {
   return (
-    <section className='footer'>
+    <section id='footer'>
       <div className='address'>
         <h2>Address</h2>
         <p>Via Salferino, 55/N</p>
