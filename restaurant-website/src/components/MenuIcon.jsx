@@ -5,6 +5,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import { NavLink } from 'react-router-dom';
 
 function MenuIcon() {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -30,7 +31,7 @@ function MenuIcon() {
         </span>
       </Button>
       <Menu
-        id="basic-menu"
+        id='basic-menu'
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
@@ -48,6 +49,9 @@ function MenuIcon() {
         <AnchorLink href='#footer'>
           <MenuItem onClick={handleClose}>Contacts</MenuItem>
         </AnchorLink>
+        <NavLink to='/booking'>
+          <MenuItem onClick={handleClose}> Booking </MenuItem>
+        </NavLink>
       </Menu>
     </div>
   );

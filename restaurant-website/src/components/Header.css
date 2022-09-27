@@ -21,23 +21,8 @@
 }
 
 .home-title {
-    margin-left: 500px;
-
+    margin-left: -50px;
+    
     font-size: 15px;
 }
 
-.book-now {
-    width: 100px;
-    height: 40px;
-
-    margin-left: 450px;
-
-    background-color: #9dada1;
-
-    font-size: 14px;
-    color: #fff;
-}
-
-.book-now:hover {
-    background-color: #828282;
-}
