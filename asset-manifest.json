@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/restaurant/static/css/main.ec80c495.css",
+    "main.js": "/restaurant/static/js/main.07c0de1e.js",
+    "static/media/terrace.jpeg": "/restaurant/static/media/terrace.ecf8a69d0fedb844ea20.jpeg",
+    "static/media/muffin.jpeg": "/restaurant/static/media/muffin.8bc262f135c6b1b13a1e.jpeg",
+    "static/media/food.jpeg": "/restaurant/static/media/food.0e03b6c464a0096485c6.jpeg",
+    "static/media/wineandcheese.jpeg": "/restaurant/static/media/wineandcheese.1ee9442020d9ce2e5d92.jpeg",
+    "static/media/drinks.jpeg": "/restaurant/static/media/drinks.4639a7838a0914f78a5c.jpeg",
+    "static/media/salmon.jpeg": "/restaurant/static/media/salmon.9eace8fc392fe0b4679c.jpeg",
+    "static/media/poachedegg.jpeg": "/restaurant/static/media/poachedegg.560f15223bb333846738.jpeg",
+    "index.html": "/restaurant/index.html",
+    "main.ec80c495.css.map": "/restaurant/static/css/main.ec80c495.css.map",
+    "main.07c0de1e.js.map": "/restaurant/static/js/main.07c0de1e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec80c495.css",
+    "static/js/main.07c0de1e.js"
+  ]
+}
