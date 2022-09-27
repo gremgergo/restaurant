@@ -7,6 +7,7 @@ import './Home.css';
 import poachedEgg from '../img/poachedegg.jpeg';
 import wineAndCheese from '../img/wineandcheese.jpeg';
 import terrace from '../img/terrace.jpeg';
+import ScrollUpBtn from './ScrollUpBtn';
 
 
 function Home() {
@@ -36,6 +37,7 @@ function Home() {
             <Menu />
             <CorporateMenu />
             <Newsletter />
+            <ScrollUpBtn />
         </Layout>
   )
 }
