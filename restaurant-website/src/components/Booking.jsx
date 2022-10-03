@@ -1,13 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Layout from './Layout';
 import './Booking.css';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import Alert from '@mui/material/Alert';
 
 
 function Booking() {
+  const form = useRef();
+  const [status, setStatus] = useState(undefined);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('Test_Gmail', 'template_woizd24', form.current, 'ijZhsEJs3fx7-7umv')
+      .then((result) => {
+          console.log(result.text);
+          setStatus({ type: 'success'});
+      }, (error) => {
+          console.log(error.text);
+          setStatus({ type: 'error', error});
+      });
+      form.current.reset();
+  };
+
+
   return (
+
     <Layout>
+
       <h1 className='booking-title'>Maison Dorée table reservation</h1>
-      <form className='booking'>
+      <>
+        {status?.type === 'success' && <Alert severity="success" color="info">
+      This is a success alert — check it out!
+      </Alert>}
+        {status?.type === 'error' && <Alert severity="error" color="info">
+      This is a success alert — check it out!
+      </Alert>}
+      </>
+      
+      <form className='booking' ref={ form } onSubmit={ sendEmail } >
         <div className='booking-container'>
           <div className='booking-date-time-number'>
             <div className='booking-date'>
@@ -44,11 +76,17 @@ function Booking() {
                 <input type='tel' name='tel' className='tel' placeholder='e.g.: 123-456-789' required=''/>
               </div>
             </div>
+            <div className='booking-comment'>
+              <label htmlFor='comment'>comment</label>
+              <textarea name='comment' className='comment' cols="30" rows="10" placeholder='Share anything with us..'></textarea>
+            </div>
           </div>
         </div>
-        <button type='submit'>Book Now</button>
+        <button type='submit' value='send'>Book Now</button>
       </form>
+
     </Layout>
+
   )
 }
 

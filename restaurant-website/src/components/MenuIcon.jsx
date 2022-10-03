@@ -3,6 +3,7 @@ import './MenuIcon.css';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
+import Divider from '@mui/material/Divider';
 import { useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { NavLink } from 'react-router-dom';
@@ -41,16 +42,17 @@ function MenuIcon() {
       >
         
         <AnchorLink href='#menu'>
-          <MenuItem onClick={handleClose}>Menu</MenuItem> 
+          <MenuItem id='menu-icon-menu' onClick={handleClose}>Menu</MenuItem> 
         </AnchorLink>
         <AnchorLink href='#corporate-menu'>
-          <MenuItem onClick={handleClose}>Corporative</MenuItem>
+          <MenuItem id='menu-icon-corporative' onClick={handleClose}>Corporative</MenuItem>
         </AnchorLink>
         <AnchorLink href='#footer'>
-          <MenuItem onClick={handleClose}>Contacts</MenuItem>
+          <MenuItem id='menu-icon-contacts' onClick={handleClose}>Contacts</MenuItem>
         </AnchorLink>
+        <Divider sx={{ my: 0.5 }} />
         <NavLink to='/booking'>
-          <MenuItem onClick={handleClose}> Booking </MenuItem>
+          <MenuItem id='menu-icon-booking' onClick={handleClose}> Booking </MenuItem>
         </NavLink>
       </Menu>
     </div>

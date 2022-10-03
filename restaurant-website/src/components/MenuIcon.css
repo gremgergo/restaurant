@@ -7,6 +7,22 @@
     color: #000;
 }
 
+#basic-button:hover {
+    border-radius: 0%;
+
+    background-color: #9dada1;
+    color: #fff;
+}
+
 #basic-menu {
     padding: 5px;
+}
+
+#menu-icon-menu:hover,
+#menu-icon-corporative:hover,
+#menu-icon-contacts:hover,
+#menu-icon-booking:hover {
+    background-color: #9dada1;
+
+    color: #fff;
 }

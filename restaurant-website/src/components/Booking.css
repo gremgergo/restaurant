@@ -13,11 +13,11 @@
 .booking input {
     padding: 10px;
 
-    border: 2px solid #828282;
+    border: 2px solid #9dada1;
 
     font-size: 14px;
 
-    color: #bebebe;
+    color: #828282;
 }
 
 .booking input::placeholder {
@@ -25,7 +25,7 @@
 }
 
 .booking input:focus {
-    color: #bebebe;
+    color: #828282;
 }
 
 .booking label {
@@ -55,7 +55,26 @@
     width: 237.5px;
     height: 40px;
 
+    margin-bottom: 25px;
+}
+
+.comment {
+    height: 120px;
+
+    padding: 10px;
+
+    border: 2px solid #9dada1;
     margin-bottom: 50px;
+
+    font-size: 14px;
+} 
+
+.comment::placeholder {
+    color: #bebebe;
+}
+
+.comment:focus {
+    color: #828282;
 }
 
 .booking-title {
@@ -69,6 +88,11 @@
     flex-direction: row;
 
     gap: 25px;
+}
+
+.booking-comment {
+    display: flex;
+    flex-direction: column;
 }
 
 .booking-date,

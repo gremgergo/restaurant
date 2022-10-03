@@ -1,9 +1,9 @@
 {
   "name": "restaurant-website",
   "version": "0.1.0",
-  "homepage": "https://gremgergo.github.io/restaurant",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.7.0",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
