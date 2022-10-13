@@ -13,7 +13,7 @@ function Booking() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('Test_Gmail', 'template_woizd24', form.current, 'ijZhsEJs3fx7-7umv')
+    emailjs.sendForm('md_booking', 'template_woizd24', form.current, 'ijZhsEJs3fx7-7umv')
       .then((result) => {
           console.log(result.text);
           setStatus({ type: 'success'});
@@ -30,50 +30,43 @@ function Booking() {
     <Layout>
 
       <h1 className='booking-title'>Maison Dorée table reservation</h1>
-      <>
-        {status?.type === 'success' && <Alert severity="success" color="info">
-      This is a success alert — check it out!
-      </Alert>}
-        {status?.type === 'error' && <Alert severity="error" color="info">
-      This is a success alert — check it out!
-      </Alert>}
-      </>
       
       <form className='booking' ref={ form } onSubmit={ sendEmail } >
+      
         <div className='booking-container'>
           <div className='booking-date-time-number'>
             <div className='booking-date'>
               <label htmlFor='date'>date</label>
-              <input type='date' name='date' className='date' />
+              <input type='date' name='date' className='date' required />
             </div>
             <div className='booking-time'>
               <label htmlFor='time'>time</label>
-              <input type='time' name='time' className='time' />
+              <input type='time' name='time' className='time' required />
             </div>
             <div className='booking-number'>
               <label htmlFor='number'>number of people</label>
-              <input type='number' name='number' className='number' />
+              <input type='number' name='number' className='number' min='0' required />
             </div>
           </div>
           <div className='details'>
             <div className='booking-name'>
               <div className='booking-first-name'>
                 <label htmlFor='first-name'>first name</label>
-                <input type='text' name='first-name' className='name' placeholder='e.g.: John' />
+                <input type='text' name='first-name' className='name' placeholder='e.g.: John' required />
               </div>
               <div className='booking-last-name'>
                 <label htmlFor='last-name'>last name</label>
-                <input type='text' name='last-name' className='name' placeholder='e.g.: Doe'/>
+                <input type='text' name='last-name' className='name' placeholder='e.g.: Doe' required />
               </div>
             </div>
             <div className='booking-contact'>
               <div className='booking-email'>
                 <label htmlFor='email'>e-mail</label>
-                <input type='email' name='email' className='email' placeholder='e.g.: john.doe@maisondoree.com' required=''/>
+                <input type='email' name='email' className='email' placeholder='e.g.: john.doe@maisondoree.com' required />
               </div>
               <div className='booking-tel'>
                 <label htmlFor='tel'>telephone</label>
-                <input type='tel' name='tel' className='tel' placeholder='e.g.: 123-456-789' required=''/>
+                <input type='tel' name='tel' className='tel' placeholder='e.g.: 123-456-789' required />
               </div>
             </div>
             <div className='booking-comment'>
@@ -82,7 +75,17 @@ function Booking() {
             </div>
           </div>
         </div>
-        <button type='submit' value='send'>Book Now</button>
+        <div className='button-alert'>
+          <button type='submit' value='send'>Book Now</button>
+          <>
+          {status?.type === 'success' && <Alert severity="success"  id='alert-booking'>
+          Thank you for your reservation
+          </Alert>}
+            {status?.type === 'error' && <Alert severity="error" color="info">
+          This is a success alert — check it out!
+          </Alert>}
+          </>
+        </div>
       </form>
 
     </Layout>

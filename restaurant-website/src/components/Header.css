@@ -26,3 +26,8 @@
     font-size: 15px;
 }
 
+@media screen and ( max-width: 390px ) {
+    .header-tel {
+        display: hidden;
+    }
+}

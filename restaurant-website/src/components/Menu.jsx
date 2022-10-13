@@ -19,21 +19,21 @@ function Menu() {
                 <div className='menu-name'>Lunch / Dinner</div>
                 <div className='menu-name-bottom'>Let's see lunch / dinner</div>
               </div>
-              </NavLink>
+            </NavLink>
             <NavLink className='menu-container' to='/dessert'>
               <img className='dessert' src={ dessert } alt='dessert' />
               <div className='middle'>
                 <div className='menu-name'>Dessert</div>
                 <div className='menu-name-bottom'>Let's see dessert</div>
               </div>
-              </NavLink>
+            </NavLink>
             <NavLink className='menu-container' to='/drinks'>
               <img className='drinks' src={ drinks } alt='drinks' />
               <div className='middle'>
                 <div className='menu-name'>Drinks</div>
                 <div className='menu-name-bottom'>Let's see drinks</div>
               </div>
-              </NavLink>
+            </NavLink>
         </div>
     </div>
   )

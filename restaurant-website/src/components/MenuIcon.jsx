@@ -9,7 +9,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { NavLink } from 'react-router-dom';
 
 function MenuIcon() {
-  const [anchorEl, setAnchorEl] = useState(null);
+  const [ anchorEl, setAnchorEl ]  = useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -25,7 +25,7 @@ function MenuIcon() {
         aria-controls={open ? 'basic-menu' : undefined}
         aria-haspopup="true"
         aria-expanded={open ? 'true' : undefined}
-        onClick={handleClick}
+        onClick={ handleClick }
       >
         <span className='material-symbols-outlined'>
           menu
@@ -33,26 +33,25 @@ function MenuIcon() {
       </Button>
       <Menu
         id='basic-menu'
-        anchorEl={anchorEl}
-        open={open}
-        onClose={handleClose}
+        anchorEl={ anchorEl }
+        open={ open }
+        onClose={ handleClose }
         MenuListProps={{
           'aria-labelledby': 'basic-button',
         }}
       >
-        
         <AnchorLink href='#menu'>
-          <MenuItem id='menu-icon-menu' onClick={handleClose}>Menu</MenuItem> 
+            <MenuItem id='menu-icon-menu' onClick={ handleClose }>Menu</MenuItem>
         </AnchorLink>
         <AnchorLink href='#corporate-menu'>
-          <MenuItem id='menu-icon-corporative' onClick={handleClose}>Corporative</MenuItem>
+          <MenuItem id='menu-icon-corporative' onClick={ handleClose }>Corporative</MenuItem>
         </AnchorLink>
         <AnchorLink href='#footer'>
-          <MenuItem id='menu-icon-contacts' onClick={handleClose}>Contacts</MenuItem>
+          <MenuItem id='menu-icon-contacts' onClick={ handleClose }>Contacts</MenuItem>
         </AnchorLink>
         <Divider sx={{ my: 0.5 }} />
         <NavLink to='/booking'>
-          <MenuItem id='menu-icon-booking' onClick={handleClose}> Booking </MenuItem>
+          <MenuItem id='menu-icon-booking' onClick={ handleClose }> Booking </MenuItem>
         </NavLink>
       </Menu>
     </div>
